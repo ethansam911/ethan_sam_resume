@@ -1,253 +1,132 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring
-% the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%------------------------------------------------------------------------------
-
-\documentclass[8pt]{resume} % Use the custom resume.cls style
-
-% Document margins
-\usepackage[left=0.5in,top=0.35in,right=0.5in,bottom=0.35in]{geometry}
-\usepackage{multicol}
+% \documentclass[]{Resume}
+\documentclass[a4paper]{Resume}
+\usepackage{fancyhdr}
 \usepackage{hyperref}
+% \usepackage{fontawesome5}
+\usepackage{fontawesome}
 
-\name{Sean Newman} % Your name
-\input{contact}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
 
+\hypersetup{%
+ 	colorlinks=false,% hyperlinks will be black
+ 	pdfborderstyle={/S/U/W 0.25}% border style will be underline of width 0.25pt
+}
+ 
 \begin{document}
 
-%------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ethan Sam}{
+    % xxx-xxx-xxxx -> Phone Number
+	\normalfont {\faPhone } 347-610-7484 \hfill {\faMapMarker } New York, NY \hfill {\faAt } \href{mailto:Ethan.sam56@myhunter.cuny.edu}{Ethan.sam56@myhunter.edu} \hfill {\faLinkedinSquare } \href{https://linkedin.com/in/ethansam911}{ethansam} \hfill {\faGithub } \href{https://github.com/ethansam911}{ethansam911}
+}
 
-\begin{rSection}{Education}
+\descript{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Professional Summary 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\bf Rochester Institute of Technology} \hfill {\em Estimated May 2021} \\ 
-B.S./M.S. in Computing Security \hfill Overall GPA: 3.35
+\section{Professional Summary}
+\hrulefill
 
-\end{rSection}
+\pt  A prospective Cybersecurity Analyst with background in computer science.  Leverages experience in IT Support, Customer Service, and Software Engineering to develop effective security solutions and to detect vulnerabilities in information systems.   
+\sectionsep
 
-%------------------------------------------------------------------------------
-%   SKILLS (technical expertise?)
-%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\hrulefill
 
-\begin{rSection}{Technical Skills}
+\subsection{CUNY Hunter College \hfill \normalfont New York, NY}
 
-    \begin{multicols}{2}[]
+\position{B.A. Computer Science (GPA: 3.67/4.0)}{June 2018 - November 2020}
 
-    \begin{description}
-        \itemsep -0.5em
-        \item[Languages] Python, Rust, TypeScript, JavaScript, Bash, C++, C, PowerShell, Java, \LaTeX
-        \item[Tools/Software] Linux \& Windows Server, Elastic Stack (ELK), Ansible, GitLab \& GitLab CI, VMware vSphere Suite
-    \end{description}
 
-    \end{multicols}
+\pt \textbf{Coursework:} Computer Vision, Adv. Information Retrieval, Machine Learning in NLP, Autonomous Vehicles, UI Design \\
+\pt \textbf{Teaching Experience:} Natural Language Processing, Discrete Structures
+\sectionsep
 
-\end{rSection}
+\subsection{CodePath Cybersecurity \hfill \normalfont New York, NY}
 
-%------------------------------------------------------------------------------
-%   Start two-column section
-%------------------------------------------------------------------------------
+\pt Participating in a rigorous 13-week \textbf{Facebook-sponsored} Cybersecurity course created by Silicon Valley Engineers  \\
+\pt Applied penetration-testing techniques such as XSS, SQLInjection, WPscan, SQLmap, and Dictionary/Bruteforce attacks for weekly labs and CTF Challenges
+\sectionsep
 
-\begin{multicols}{2}[]
 
-%------------------------------------------------------------------------------
-%   Projects
-%------------------------------------------------------------------------------
 
-\begin{rSection}{Projects}
-    
-    {\bf ScoreStack} - a scoring system for security competitions built on the Elastic Stack
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-        \item Dynamicbeat - a custom Beat written in Golang to perform checks
-        \item Kibana Plugin written in TypeScript \& React to manage checks
-        \item Ansible \& Terraform deployment automation
-    \end{list}
+% \pt \textbf{Electives:} Artificial Intelligence, Machine Learning, Information Retrieval, Data Mining, Number Theory, Cryptography \\
+% \pt \textbf{Teaching Experience:} Data Mining, Object-oriented Programming
+\sectionsep
 
-%------------------------------------------------------------------------------
 
-    {\bf ISTS 17} - ran national security competition with Red vs. Blue, CTF,
-        and King of the Hill components
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-        \item Hosted 8 visiting college teams, 4 RIT teams
-        \item Led 10-person team in planning, building, and running competition
-    \end{list}
 
-%------------------------------------------------------------------------------
 
-    {\bf RITSEC CTF 2018} - deployed and ran security CTF on AWS, hosted at
-    \url{https://ctf.ritsec.club}
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-        \item Led team of 12 in creating over 30 CTF challenges
-        \item 854 teams participated
-    \end{list}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Certifications} 
+\hrulefill 
 
-%------------------------------------------------------------------------------
+\pt \href{https://www.udemy.com/certificate/UC-98f894dc-4e81-4be3-aeb9-21b391568400/}{\textbf{CompTIA A+}}
 
-%    {\bf IRSeC Infrastructure} - deployed Red vs. Blue security competition on
-%    vSphere/Ceph cluster
-%    \begin{list}{$\bullet$}{\leftmargin=1em}
-%    \itemsep -0.5em \vspace{-0.5em}
-%        \item Student teams defended small 6-host networks
-%        \item Deployment of vulnerable services with Ansible
-%    \end{list}
+\pt \href{https://www.udemy.com/certificate/UC-98f894dc-4e81-4be3-aeb9-21b391568400/}{\textbf{Microsoft Ignite}}
 
-%------------------------------------------------------------------------------
+\pt \href{https://www.udemy.com/certificate/UC-98f894dc-4e81-4be3-aeb9-21b391568400/}{\textbf{Coursera IBM Cybersecurity Analyst}} 
 
-%    {\bf Home Lab} - personal server for various projects
-%    \begin{list}{$\bullet$}{\leftmargin=1em}
-%    \itemsep -0.5em \vspace{-0.5em}
-%        \item ESXi/vCenter Server virtualization stack
-%        \item Linux-based domain with FreeIPA
-%        \item Virtualized pfSense router with VPN configured for remote network
-%            access
-%        \item GitLab used for source control, documentation, and tracking
-%            progress on projects
-%    \end{list}
+\href{https://github.com/kevalmorabia97/SEDTWik-Event-Detection-from-Tweets}{[\t
+\sectionsep
 
-\end{rSection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\
 
-\columnbreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills} 
+\hrulefill
 
-%------------------------------------------------------------------------------
-%   Activities	
-%------------------------------------------------------------------------------
+\pt \textbf{Tools:} Git, Unix, Burpsuite, Wireshark, Word-Press, Active Directory, Metasploit, VMWare, VirtualBox \\
 
-\begin{rSection}{Activities}
+\pt \textbf{Frameworks:}  Metasploit, Gobuster 
 
-    {\bf RITSEC}: Member, 2018-Present; Competition Architect, 2018-2019
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-    \item Responsible for all club competitions: RITSEC CTF 2018, ISTS 17,
-        IRSeC 2019
-    \end{list}
+\pt \textbf{Hardware/OS:}  Linux, Windows, MacOS 
 
-%------------------------------------------------------------------------------
+\pt \textbf{Languages:}  Python, C++, SQL, HTML/CSS, JavaScript, LaTeX  
+\sectionsep
 
-    {\bf Collegiate Cyber Defense Competition}: RIT Team member, 2018-2020
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-    \item 1st place - Northeastern CCDC Regionals 2019 \& 2020
-    \item 3rd place - National CCDC 2019
-    \end{list}
 
-%------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience} 
+\hrulefill 
 
-    {\bf RIT Competitive Cybersecurity Club}: Member, 2016-2018; Secretary,
-    2017-2018
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-    \item Co-lead for spring competition infrastructure (see "Projects")
-    \item Assisted with fall CTF competition
-    \end{list}
+\subsection{Herschel Supply Company \hfill \normalfont New York, NY}
+\position{Technology Consultant}{July - December 2020}
 
-%------------------------------------------------------------------------------
+\pt Routinely monitored audio/visual systems, customer profile database, and installed hardware for store location \\
 
-    {\bf SPARSA}: Member, 2016-2018
-    \begin{list}{$\bullet$}{\leftmargin=1em}
-    \itemsep -0.5em \vspace{-0.5em}
-    \item Gave presentation on the basics of honeypotting
-    \end{list}
+\pt Installed and serviced cabling infrastructure and devices for POS, Audio/ Visual Systems, and CCTV \\
 
-%------------------------------------------------------------------------------
+\sectionsep
 
-%    {\bf Electronic Gaming Society}: LAN Officer, 2017-2018
-%    \begin{list}{$\bullet$}{\leftmargin=1em}
-%    \itemsep -0.5em \vspace{-0.5em}
-%    \item Responsible for setting up and maintaining networks during club
-%        events
-%    \end{list}
 
-\end{rSection}
+\subsection{CUNY Hunter College \hfill \normalfont New York, NY}
+\position{Information Technology Support Technician}{June 2018 - November 2020}
 
-%------------------------------------------------------------------------------
-%   End two-column section
-%------------------------------------------------------------------------------
+\pt Provided IT services for students in the Leon & Toby Cooperman Library \\
 
-\end{multicols}
+\pt Resolved network connectivity issues for computers, Smart Boards, and tablets \\
+\sectionsep
 
-%------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%------------------------------------------------------------------------------
 
-\begin{rSection}{Professional Experience}
+%\sectionsep
 
-    \begin{rSubsection}
-        {The MITRE Corporation}
-        {May 2019 - Present}
-        {McLean, VA}
-    \item Created high-performance data collection and analysis utility
-    \item Developed Ansible roles to deploy services for a threat emulation environment
-    \item Contributed to cloud-based network research utility using Apache Libcloud
-    \item Created custom tooling to reduce a project's build times by 20-30 minutes
-    \end{rSubsection}
-
-%------------------------------------------------------------------------------
-
-    \begin{rSubsection}
-        {Datto, Inc.}
-        {June 2018 - August 2018}
-        {Infrastructure Engineering Intern}
-        {Norwalk, CT}
-    \item Created utility for compiling data from various sources into new source-of-truth documentation app
-    \item Triaged and troubleshooted issues on fleet of over 4,000 production servers
-%    \item Created utility for auditing DNS records and documentation of IPMI interfaces
-%    \item Participated in weekly code reviews to learn about and improve new utilities written by coworkers
-    \end{rSubsection}
-%
-%%------------------------------------------------------------------------------
-%
-%    \begin{rSubsection}
-%        {NT Concepts}
-%        {June 2017 - August 2017}
-%        {IT Intern}
-%        {Vienna, VA}
-%    \item Led network reconfiguration project to adhere to RFC 1918
-%    \item Led project to deploy and configure internal network time servers
-%    \item Researched and evaluated tool for integration into patch management and approval process
-%    \end{rSubsection}
-%
-%%------------------------------------------------------------------------------
-%
-%    \begin{rSubsection}
-%        {NTID Office of Information and Computing Studies}
-%        {January 2017 - April 2018}
-%        {Clerical Assistant}
-%        {Rochester, NY}
-%    \item Developed curriculum for CompTIA A+ preparation course
-%    \item Maintained inventory records of department assets
-%    \end{rSubsection}
-
-\end{rSection}
-
-%------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%------------------------------------------------------------------------------
-
-\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\end{document}  \documentclass[]{article}
