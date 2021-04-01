@@ -24,8 +24,8 @@
 % Name command
 \newcommand{\namesection}[2]{
 	\centering{
-		\fontsize{18pt}{22pt} 
-		\fontspec[Path = fonts/georgia/]{georgiab}\selectfont #1
+		\fontsize{20pt}{22pt} 
+		\fontspec[Path = fonts/georgia/]{georgiab}\selectfont #1 \vspace{1ex}
 	} \\
 	\centering{\fontsize{10pt}{12pt}\selectfont #2}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
@@ -34,10 +34,10 @@
 
 % Section seperators 
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{-8pt}
+\titlespacing{\section}{0pt}{0pt}{-8pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
-\newcommand{\postsectionsep}{\vspace{0pt}}
+\newcommand{\sectionsep}{\vspace{11pt}}
+\newcommand{\postsectionsep}{\vspace{1ex}}
 
 % Headings command
 \titleformat{\section}{
@@ -45,7 +45,7 @@
 
 % Subheadings command
 \titleformat{\subsection}{
-	\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{12pt}\selectfont \bfseries
+	\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont \bfseries
 }{}{0em}{}
 
 \newcommand{\position}[2]{
